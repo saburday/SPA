@@ -2,15 +2,32 @@
   "name": "notes-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack-devserver": "webpack-dev-server --debug --hot --devtool eval-source-map --output-pathinfo --watch --colors --inline --content-base public --port 8090 --host 0.0.0.0"
   },
   "author": "Teslenko Iaroslav",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
-    "mongoose": "^4.12.1"
+    "mongoose": "^4.12.1",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6",
+    "less": "^2.6.0"
+  },
+  "devDependencies": {
+    "babel": "5.x",
+    "babel-loader": "5.*",
+    "css-loader": "^0.22.0",
+    "file-loader": "^0.8.5",
+    "json-loader": "^0.5.4",
+    "less-loader": "^2.2.2",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.12.12",
+    "webpack-dev-server": "^1.14.1"
   }
 }
